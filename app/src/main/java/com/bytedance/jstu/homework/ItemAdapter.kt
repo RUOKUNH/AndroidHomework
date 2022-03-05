@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class ItemAdapter : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
@@ -16,9 +17,11 @@ class ItemAdapter : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
     class ItemViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
         private val tv= view.findViewById<Button>(R.id.button1)
+        private val tr = view.findViewById<TextView>(R.id.brief)
 
         fun bind(content: String) {
             tv.text = content
+            tr.text = "这里是${content}的概述信息"
             tv.setOnClickListener{
                 Log.d("press", "点击${content}")
                 val intent = Intent()
