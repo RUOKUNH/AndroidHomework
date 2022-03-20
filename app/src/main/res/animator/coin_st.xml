@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+    <set>
+        <objectAnimator
+            android:propertyName="rotation"
+            android:valueTo="-20"
+            android:valueFrom="20"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            android:duration="130"
+            android:repeatCount="1"
+            android:repeatMode="reverse"
+            />
+
+        <objectAnimator
+            android:propertyName="alpha"
+            android:valueFrom="0"
+            android:valueTo="1"
+            android:duration="260"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            />
+
+        <objectAnimator
+            android:propertyName="translationX"
+            android:valueFrom="-70"
+            android:valueTo="0"
+            android:duration="260"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            />
+    </set>
+
+    <set>
+        <objectAnimator
+            android:propertyName="rotation"
+            android:valueTo="-20"
+            android:valueFrom="20"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+            android:duration="130"
+            android:repeatCount="5"
+            android:repeatMode="reverse"
+            />
+
+    </set>
+
+</set>

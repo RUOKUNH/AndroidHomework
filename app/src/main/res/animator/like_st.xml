@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:propertyName="rotation"
+        android:valueTo="-20"
+        android:valueFrom="20"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:duration="130"
+        android:repeatCount="7"
+        android:repeatMode="reverse"
+        />
+
+</set>
